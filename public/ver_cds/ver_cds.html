@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver</title>
+    <link rel="stylesheet" href="ver_cds.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Cadastro de CD</h1>
+    </div>
+    
+    <h2>Lista de CD's Cadastrados</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Autor</th>
+                <th>Data Criação</th>
+            </tr>
+        </thead>
+
+        <tbody class="tableCds"></tbody>
+
+    </table>
+
+    <div class="container_buttons">
+        <button><a href="../cadastrar_cds/cadastrar_cds.html">Novo CD</a></button>
+        <button class="btnEditarCd">Editar CD</button>
+        <button class="btnExcluirCd">Excluir CD</button>
+        <div class="msg"></div>
+    </div>
+
+    <div class="confirm_deletar_cd model">
+        <p>Deseja mesmo deletar esse cd?</p>
+        <div class="buttonsDelete">
+            <button class="confirmaDeletarCD">SIM</button>
+            <button class="naoDeletarCD">NÃO</button>
+        </div>
+    </div>
+
+    <div class="editar_cd model">
+        <div class="container_info_cd">
+            <div class="nomeAtual"></div>
+            <div class="autorAtual"></div>
+            <div class="dataCriacaoAtual"></div>
+        </div>
+        <form id="formulario">
+            <input type="text" name="nomeEditado" id="nomeEditado" placeholder="Nome..." />
+            <input type="text" name="autorEditado" id="autorEditado" placeholder="Autor..." />
+            <input type="datetime" name="dataCriacaoEditada" id="dataCriacaoEditada" placeholder="Data criação (ANO-MÊS-DIA)" />
+            <div class="msgEdicao"></div>
+        </form>
+        <button class="editarCd">Editar</button>
+        <button class="cancelarEdicao">Cancelar edição</button>
+    </div>
+
+    <div class="model ver_musicas">
+        <div class="btnFechar fechar_ver_musicas">X</div>
+        <h2>Músicas do CD: <div class="cdEscolhido"></div></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>ID Música</th>
+                    <th>Nome</th>
+                    <th>Tempo em segundos</th>
+                </tr>
+            </thead>
+            <tbody class="tableMusicas"></tbody>
+        </table>
+
+        <div class="container_buttons_musica">
+            <button class="novaMusicaBtn">Nova Música</button>
+            <button class="editarMusicaBtn">Editar Música</button>
+            <button class="excluirMusicaBtn">Excluir Música</button>
+        </div>
+        <div class="msgMusica"></div>
+    </div>
+
+    <div class="model confirma_deletar_musica">
+        <div class="btnFechar fechar_confirma_musica">X</div>
+        <p>Deseja mesmo deletar essa música?</p>
+        <button class="confirma_deletar_musica_btn">Sim</button>
+        <button class="fecha_deletar_musica_btn">Não</button>
+    </div>
+
+    <div class="model novaMusicaContainer">
+        <div class="btnFechar fechar_nova_musica">X</div>
+        <h2>Adicionar música</h2>
+        <form id="formulario_nova_musica">
+            <input type="text" name="nome_musica" id="nome_musica" placeholder="Nome da música..." />
+            <input type="number" name="tempo_musica" id="tempo_segundos" placeholder="Tempo em segundos..." />
+        </form>
+        <button class="criarMusicaBtn">Criar</button>
+        <div class="msgNovaMusica"></div>
+    </div>
+
+    <div class="model editarMusicaContainer">
+        <div class="btnFechar fechar_container">X</div>
+        <div class="container_info_musica">
+            <div class="nome_atual_musica"></div>
+            <div class="tempo_atual_musica"></div>
+        </div>
+        <form id="formulario_editar_musica">
+            <input type="text" name="nome_musica_editar" id="nome_musica" placeholder="Nome da música..." />
+            <input type="number" name="tempo_segundos_editar" id="tempo_segundos_editar" placeholder="Tempo em segundos..." />
+        </form>
+        <button class="editarMusicaBtnPut">Editar</button>
+        <button class="cancelarEdicaoBtn">Cancelar edição</button>
+    </div>
+
+    <script src="ver_cds.js"></script>
+    <script src="musicas.js"></script>
+</body>
+</html>

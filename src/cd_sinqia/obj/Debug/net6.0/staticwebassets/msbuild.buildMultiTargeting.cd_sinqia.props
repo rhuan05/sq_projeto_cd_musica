@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\cd_sinqia.props" />
+</Project>

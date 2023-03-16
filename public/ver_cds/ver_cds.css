@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe ui';
+}
+
+body{
+    text-align: center;
+}
+
+.header{
+    margin-top: 80px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+table{
+    margin: auto;
+    margin-top: 18px;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+h2{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+thead{
+    margin-top: 100px;
+    background: rgb(86, 86, 255);
+    color: white;
+}
+
+tbody{
+    background: rgb(240, 240, 240);
+}
+
+td{
+    padding: 5px 0px;
+}
+
+input{
+    border: 3px solid black;
+}
+
+.container_buttons{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+button{
+    cursor: pointer;
+    padding: 3px 10px;
+    border: none;
+    font-weight: 500;
+    background: rgb(222, 222, 222);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.confirm_deletar_cd{
+    display: none;
+    margin-top: 100px;
+}
+
+.editar_cd{
+    display: none;
+    width: 90vw;
+    height: 90vh;
+}
+
+.nomeAtual{
+    margin-top: 140px;
+}
+
+#nomeEditado{
+    margin-top: 20px;
+}
+
+.model{
+    background: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+}
+
+input{
+    border: 2px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    padding: 2px 5px;
+    outline: none;
+}
+
+.dataCriacaoAtual{
+    margin-bottom: 10px;
+}
+
+.container_info_cd{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ver_musicas{
+    display: none;
+    width: 80%;
+    height: 60%;
+    margin-top: -50px;
+}
+
+.novaMusicaContainer{
+    display: none;
+}
+
+.editarMusicaContainer{
+    display: none;
+}
+
+.btnFechar{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background: red;
+    border-radius: 60px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+}
+
+.confirma_deletar_musica{
+    display: none;
+}
+
+.tableMusicas{
+    background: white;
+}
+
+.tableMusicas td{
+    border: 1px solid rgb(240, 240, 240);
+}
+
+h2{
+    text-align: center;
+}
+
+.container_buttons_musica{
+    margin-top: 20px;
+}
+
+.novaMusicaContainer{
+    width: 80%;
+    height: 60%;
+    margin-top: -50px;
+}
+
+.nome_atual_musica, .novaMusicaContainer h2{
+    margin-top: 100px;
+}
+
+#formulario_nova_musica{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.editarMusicaContainer{
+    width: 80%;
+    height: 60%;
+    margin-top: -50px;
+}
+
+#formulario_editar_musica{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.confirma_deletar_musica{
+    width: 300px;
+    padding: 30px;
+    background: rgb(254, 254, 254); 
+    margin-top: 14px;
+}
+
+.fechar_confirma_musica{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.fecha_deletar_musica_btn, .confirma_deletar_musica_btn{
+    margin-top: 10px;
+}
+
+.msgNovaMusica{
+    margin-top: 5px;
+}
